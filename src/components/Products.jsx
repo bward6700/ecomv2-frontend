@@ -19,7 +19,7 @@ const Products = () => {
   const [products,showProducts] = useState ([]);
 
   useEffect(() => {
-		axios.get('http://localhost:3001/products').then(
+		axios.get('https://ecomv2.herokuapp.com/products/').then(
 			(response) => {
 				showProducts(response.data);
 			}
