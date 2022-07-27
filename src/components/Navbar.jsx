@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import vlogo from '../images/logo1.png'
 import {mobile} from '../responsive'
 import { useState } from 'react'
+import { tablet } from '../responsive'
 
 const Container = styled.div`
     height: 60px;
@@ -11,8 +12,9 @@ const Container = styled.div`
     position:sticky;
     top:0;
     z-index:1;
-    background-color:gray;
+    background-color:lightgray;
     ${mobile({height:"50px"})}
+    ${tablet({height:"100px",marginBottom:"100px"})}
 `
 const Wrapper = styled.div `
     padding: 10px 20px;
@@ -75,11 +77,13 @@ const MenuItem = styled.div`
     cursor: pointer;
     margin-left:25px;
     text-style:none;
-
+    text-decoration:none;
+    color:black;
     &:hover{
       text-decoration:underline;
   }
   ${mobile({display:"none"})}
+  ${tablet({fontSize:"30px"})}
 `
 
 const Navbar = () => {

@@ -43,7 +43,7 @@ margin:10px;
 cursor:pointer;
 
 &:hover{
-    background-color:#e9f5f5;
+    background-color:teal;
     transform:scale(1.2);
 }
 `

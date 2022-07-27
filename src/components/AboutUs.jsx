@@ -2,6 +2,7 @@ import { AlbumRounded } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import { About } from '../data'
+import { tablet } from '../responsive'
 import { mobile } from '../responsive'
 
 const Container = styled.div`
@@ -14,6 +15,7 @@ padding-bottom: 150px;
 border:5px solid black; 
 margin-bottom:200px; 
 ${mobile({marginBottom:"200px", marginTop:"100px"})}
+${tablet({paddingTop:"0px"})}
 `
 const InfoContainer = styled.div`
 height:300px;

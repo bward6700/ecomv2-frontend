@@ -67,8 +67,8 @@ const Contact = () => {
     <Container>
         <Title>Contact Us</Title>
         <InputContainer>
-            <Input type="text" placeholder='Name' required/>
-            <Input placeholder='Email'/>
+            <Input type="text" placeholder='Name'/>
+            <Input type='email'placeholder='Email'/>
             <Input placeholder='Phone Number'/>
             <Textarea placeholder='Message'/>
             <Button>

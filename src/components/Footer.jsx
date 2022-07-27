@@ -2,12 +2,14 @@ import { EmailRounded, Facebook, HomeRounded, Instagram, LocalPhone, Twitter } f
 import React from 'react'
 import styled from 'styled-components'
 import vlogo from '../images/logo1.png'
+import { tablet } from '../responsive'
 import { mobile } from '../responsive'
 
 const Container = styled.div`
 display:flex;
 
 ${mobile({flexDirection:"column", backgroundColor:"lightgray"})}
+${tablet({backgroundColor:"lightgray"})}
 `
 const Left = styled.div`
 flex:1;
